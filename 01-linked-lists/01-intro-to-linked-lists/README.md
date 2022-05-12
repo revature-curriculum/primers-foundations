@@ -10,6 +10,25 @@ More often than not, a LinkedList class will be composed of not only the parent 
 
 Now that we have a better understanding of the Node subclass, lets start to logically uncover the inner workings of a Linked List. As mentioned previously, a linked list is a series of nodes that contain references to the next node in the list. That said, a diagram of the flow might look something like this:
 
+```java
+
+public class LinkedList<T>{
+
+    private Node<T> head;
+    private Node<T> tail;
+    private int size;
+
+    class Node<T>  {
+        // data is the data to be contained within this element and is of type T. 
+        // This symbol is an example of using Generics in Java.
+        T data;
+    
+        // next is the next node in the list. 
+        // If next is ever pointing to null, we can assume we are at the end of the list.
+        Node<T> next;
+    }
+```
+
 <img src="./images/linked-list.png"/>
 
 In this diagram, Node A is referred to as our **_head_** node and is the first node in the list. Every time we wish to iterate through our list from start to finish, the head node will always be our starting point. Once we have our head node object, we can check the data contained within the 'data' variable, and continue moving onward simply by grabbing the next Node (Node B) which is stored in the variable 'next'. We can continue this same series of steps up until the point where we realize that the 'next' variable is actually pointing to null, not another valid node object. At this point, we have reached the end of our list.
