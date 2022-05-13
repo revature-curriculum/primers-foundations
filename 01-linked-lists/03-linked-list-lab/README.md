@@ -1,1 +1,0 @@
-[https://github.com/revature-curriculum/linkedlist-sample](LAB)
