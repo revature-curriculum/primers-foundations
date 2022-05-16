@@ -6,8 +6,6 @@ A **_Linked List_** is a linear data structure in which elements are not stored 
 
 More often than not, a LinkedList class will be composed of not only the parent class, i.e. LinkedList, but also a supporting subclass called a **_Node_**. Objects created from this Node class will serve as the actual elements of our list and in its most basic form must only care for two class variables. The first, and arguably most import piece, is a variable to hold the **_data_** itself. In many languages, we leverage the power of generics to ensure that this LinkedList can store objects of any type that we specify. The next class variable that Node will store will typically be of type Node and will actually contain the next node object in the list (or at least a reference to it). We call this variable **_next_** to denote that it is the next node. Lets take a look at how this concept may look in Java, but keep in mind, this class design is relatively portable and can be quite easily converted to your language of choice.
 
-<img src="./images/node.png"/>
-
 Now that we have a better understanding of the Node subclass, lets start to logically uncover the inner workings of a Linked List. As mentioned previously, a linked list is a series of nodes that contain references to the next node in the list. That said, a diagram of the flow might look something like this:
 
 ```java
@@ -29,7 +27,8 @@ public class LinkedList<T>{
     }
 ```
 
-<img src="./images/linked-list.png"/>
+![linked-lists](../images/linked-list.png)
+
 
 In this diagram, Node A is referred to as our **_head_** node and is the first node in the list. Every time we wish to iterate through our list from start to finish, the head node will always be our starting point. Once we have our head node object, we can check the data contained within the 'data' variable, and continue moving onward simply by grabbing the next Node (Node B) which is stored in the variable 'next'. We can continue this same series of steps up until the point where we realize that the 'next' variable is actually pointing to null, not another valid node object. At this point, we have reached the end of our list.
 

@@ -8,11 +8,11 @@ Lets look at how this retrieval may look in a diagram and then we will follow it
 
 Assume that we have the same four node list from earlier as seen below:
 
-<img src="./images/insertion-3.png">
+![insertion-3](../images/insertion-3.png)
 
 Since our primary retrieval will be index based, we should now consider the indices for the list, remembering to start from 0.
 
-<img src="./images/indices.png">
+![indices](../images/indices.png)
 
 As we can see from the diagram above, our four node list has the following indices that we can retrieve: 0, 1, 2 and 3. If the 'get' method was called with a provided parameter of 2, the retrieval would be as follows.
 
@@ -24,7 +24,21 @@ As we can see from the diagram above, our four node list has the following indic
 
 Here's how this operation might look in Java code:
 
-<img src="./images/retrieval.png">
+```java
+public T get(int index){
+        
+        //store the current head node in a local variable
+        Node<T> current = head;
+
+        //begin a loop that should iterate n number of times with n being the index
+        for(int i=0; i < index; i++){
+            // for each iteration, 'move' the pointer by reassigning our current node with the value of current.next which should be the next node in the list
+            current = current.next;
+        }
+        //once the loop has finished iterating, we know that the current node should hold our desired data, so we return current.data
+        return current.data;
+}
+```
 
 The above implementation is fairly basic and is not protected against any user error if the method were to be called with an index that is outside of the range of our list. For instance, if our list only had four elements, if the method was called with any value higher than 3, we would end up with a NullPointerException as our loop continued and tried to call either 'next' or 'data' on a null value.
 
