@@ -5,7 +5,7 @@ The Insertion operation is the act of inserting a new element to the list. We ca
 - Inserting to the **Front** of an **Unordered** Linked List
 - Inserting to the **Middle** of an **Ordered** Linked List
 
-### Inserting to the End of an Unordered Linked List
+## Inserting to the End of an Unordered Linked List
 In an **unordered** linked list (*not sorted*), adding to the end of the list is as simple as creating a new Node object to contain the data, setting its `next` variable to point to null, and updating the **current tail** node to point to our **new tail** node.
 
 ![inserion-1](../images/insertion-1.png)
@@ -46,7 +46,7 @@ public void add(T newData){
 
 > In many cases, it is advised to keep track of the current size of the list. There are many operations that we will uncover throughout this guide that will ease the trouble. Maintaining the size is as easy as ensuring that for any **insertion** or **deletion** operation, you make sure to **increment** or **decrement** the `size` respectively.
 
-### Inserting to the Front of an Unordered Linked List
+## Inserting to the Front of an Unordered Linked List
 Inserting to the **front** of the list is just as simple as our previous example. 
 
 ![NewHeadNode](../images/NewHeadNode.png)
@@ -56,7 +56,7 @@ We start with the same step of creating a **new Node** object.
 Then, instead of having the **new node** pointing to `null`,  we must point the new node to the **current head**, *Node A*.  
 Afterwards, we need update the `head` variable to point to our newly created node as the new *first* element in the list.
 
-### Inserting in an Ordered Linked List
+## Inserting in an Ordered Linked List
 An ordered linked list complicates our operation quite a bit. Because the list is **sorted**, we must take into account that adding to the ends of the list will likely not be an appropriate location for our new node. 
 Instead, we must traverse through our list, while comparing the values of each existing nodes to our new node in order to determine the correct location to insert.
 
