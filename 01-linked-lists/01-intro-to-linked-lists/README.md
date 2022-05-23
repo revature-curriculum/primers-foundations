@@ -3,7 +3,7 @@
 ## Introduction
 
 A **_Linked List_** is a linear data structure in which elements are not stored *sequentially* in memory like arrays. Individual elements contain the memory address of the next element in the list, wherever that may actually be in memory.
-![linked list](../images/linked-list.png)
+![linked list](https://revature-curriculum.s3.amazonaws.com/primers/primers-foundations/linked-list.png)
 > This notion of holding the memory address of the next element is called a **_pointer_** and is very common. 
 
 First, we should look at what types of artifacts that typically make up a Linked List. More often than not, a ***LinkedList*** class will be composed of not only the parent class, i.e. `LinkedList`, but also a supporting subclass called a `Node`. 
@@ -35,7 +35,7 @@ public class LinkedList<T>{
 
 Now that we have a better understanding of the **Node** subclass, lets start to logically uncover the inner workings of a Linked List. As mentioned previously, a linked list is a series of nodes that contain references to the next node in the list. That said, a diagram of the Linked List's flow might look something like this:
 
-![linked-lists](../images/linked-list.png)
+![linked list](https://revature-curriculum.s3.amazonaws.com/primers/primers-foundations/linked-list.png)
 
 In this diagram, Node A is referred to as our **_head_** node and is the first node in the list. Every time we wish to iterate through our list from start to finish, the head node will always be our starting point. Once we have our head node object, we can check the data contained within the `data` variable, and continue moving to the *next* Node object (Node B) which is stored in the variable `next`. We can continue this same series of steps up until the point where we realize that the `next` variable is actually pointing to `null`, not another valid node object. At this point, we have reached the end of our list.
 
