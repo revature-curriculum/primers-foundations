@@ -5,9 +5,8 @@ The Insertion operation is the act of inserting a new element to the list. We ca
 - Inserting to the **Front** of an **Unordered** Linked List
 - Inserting to the **Middle** of an **Ordered** Linked List
 
-## Inserting to the End of an Unordered Linked List
+<h3 id="end-of-list"> Inserting to the End of an Unordered Linked List </h3>
 In an **unordered** linked list (*not sorted*), adding to the end of the list is as simple as creating a new Node object to contain the data, setting its `next` variable to point to null, and updating the **current tail** node to point to our **new tail** node.
-
 ![inserion-1](../images/insertion-1.png)
 In the diagram above, we can see that a new Node object has been created, but it is currently *floating* in space and is **not linked** within our list.
 
@@ -46,7 +45,7 @@ public void add(T newData){
 
 > In many cases, it is advised to keep track of the current size of the list. There are many operations that we will uncover throughout this guide that will ease the trouble. Maintaining the size is as easy as ensuring that for any **insertion** or **deletion** operation, you make sure to **increment** or **decrement** the `size` respectively.
 
-### Inserting to the Front of an Unordered Linked List
+<h3 id="front-of-list"> Inserting to the Front of an Unordered Linked List </h3>
 Inserting to the **front** of the list is just as simple as our previous example. 
 
 ![NewHeadNode](../images/NewHeadNode.png)
@@ -67,11 +66,11 @@ Below we list the steps in ording our Linked Lists from smallest to largest:
 
 2. Begin our traversal by comparing our new node to the current 'head' node:
 ![OrderedNodInsert2](../images/OrderedNodeInsert2.png)
-   - If our new node is **smaller** than the **head node**, our new node should become **first in the list** so we simply repeat [[#Inserting to the Front of an Unordered Linked List]].
+   - If our new node is **smaller** than the **head node**, our new node should become **first in the list** so we simply repeat [Inserting to the Front of an Unordered Linked List](#front-of-list).
    - If our new node is **larger** than the **head node**, we need to continue our traversal by grabbing the next node and repeating the comparison until we either find a condition where our new node is **smaller**, or we reach **the end of the list**.
 
 ![OrderedNodeInsert3](../images/OrderedNodeInsert3.png)
-- If we reach the end of the list (where `next` is `null`), then follow steps from: [[#Inserting to the End of an Unordered Linked List]]. 
+- If we reach the end of the list (where `next` is `null`), then follow steps from: [Inserting to the End of an Unordered Linked List](#end-of-list). 
 - If our new node does not belong at either end of the list, continure on to next step.
 
 3. In order to insert in the **middle** of the list, a few things must occur to keep everything linked. Lets assume we are inserting a new node, Node D, between Node B, and Node C:
