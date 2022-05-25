@@ -10,13 +10,13 @@ The Insertion operation is the act of inserting a new element to the list. We ca
 
 In an **unordered** linked list (_not sorted_), adding to the end of the list is as simple as creating a new Node object to contain the data, setting its `next` variable to point to null, and updating the **current tail** node to point to our **new tail** node.
 
-![inserion-1](../images/insertion-1.png)
+![inserion-1](https://revature-curriculum.s3.amazonaws.com/primers/primers-foundations/linked-list/insertion-1.png)
 In the diagram above, we can see that a new Node object has been created, but it is currently _floating_ in space and is **not linked** within our list.
 
-![insertion-2](../images/insertion-2.png)
+![insertion-2](https://revature-curriculum.s3.amazonaws.com/primers/primers-foundations/linked-list/insertion-2.png)
 Second, we have to assigned the `next` variable of Node D to null (_shown above_). This will signify that there is no other node after Node D.
 
-![insertion-3](../images/insertion-3.png)
+![insertion-3](https://revature-curriculum.s3.amazonaws.com/primers/primers-foundations/linked-list/insertion-3.png)
 After, we assign Node D's `next` variable to `null`, we still don't have a way to actually _reach_ Node D. For that, we need to access our **previous tail node**, _Node C_. We replace _Node C's_ `next` value, from `null`, to pont to Node D. This will completely insert Node D as our **new tail node** of our Link List.
 Here we can see that Node C now points to Node D as `next` in the list. Again, if we were actually writing code here, we would want to update the `tail` variable on our Linked List class so that it accurately holds Node D as our new tail.
 
@@ -52,10 +52,10 @@ public void add(T newData){
 
 Inserting to the **front** of the list is just as simple as our previous example.
 
-![NewHeadNode](../images/NewHeadNode.png)
+![NewHeadNode](https://revature-curriculum.s3.amazonaws.com/primers/primers-foundations/linked-list/NewHeadNode.png)
 We start with the same step of creating a **new Node** object.
 
-![NewHeadNode2.png](../images/NewHeadNode2.png)
+![NewHeadNode2.png](https://revature-curriculum.s3.amazonaws.com/primers/primers-foundations/linked-list/NewHeadNode2.png)
 Then, instead of having the **new node** pointing to `null`, we must point the new node to the **current head**, _Node A_.  
 Afterwards, we need update the `head` variable to point to our newly created node as the new _first_ element in the list.
 
@@ -67,22 +67,22 @@ Instead, we must traverse through our list, while comparing the values of each e
 Below we list the steps in ording our Linked Lists from smallest to largest:
 
 1. Create our new Node object to hold our data
-   ![OrderedNodeInsert](../images/OrderedNodeInsert.png)
+   ![OrderedNodeInsert](https://revature-curriculum.s3.amazonaws.com/primers/primers-foundations/linked-list/OrderedNodeInsert.png)
 
 2. Begin our traversal by comparing our new node to the current 'head' node:
-   ![OrderedNodInsert2](../images/OrderedNodeInsert2.png)
+   ![OrderedNodInsert2](https://revature-curriculum.s3.amazonaws.com/primers/primers-foundations/linked-list/OrderedNodeInsert2.png)
    - If our new node is **smaller** than the **head node**, our new node should become **first in the list** so we simply repeat [Inserting to the Front of an Unordered Linked List](#inserting-to-the-front-of-an-unordered-linked-list).
    - If our new node is **larger** than the **head node**, we need to continue our traversal by grabbing the next node and repeating the comparison until we either find a condition where our new node is **smaller**, or we reach **the end of the list**.
 
-![OrderedNodeInsert3](../images/OrderedNodeInsert3.png)
+![OrderedNodeInsert3](https://revature-curriculum.s3.amazonaws.com/primers/primers-foundations/linked-list/OrderedNodeInsert3.png)
 
 - If we reach the end of the list (where `next` is `null`), then follow steps from: [Inserting to the End of an Unordered Linked List](#inserting-to-the-end-of-an-unordered-linked-list).
 - If our new node does not belong at either end of the list, continure on to next step.
 
 3. In order to insert in the **middle** of the list, a few things must occur to keep everything linked. Lets assume we are inserting a new node, Node D, between Node B, and Node C:
-   ![OrderedNodeInsert4](../images/OrderedNodeInsert4.png)
+   ![OrderedNodeInsert4](https://revature-curriculum.s3.amazonaws.com/primers/primers-foundations/linked-list/OrderedNodeInsert4.png)
    - Node D will be before Node C, so we must point the `next` variable on Node D to point to Node C.
-     ![OrederedNodeInsert5](../images/OrderedNodeInsert5.png)
+     ![OrederedNodeInsert5](https://revature-curriculum.s3.amazonaws.com/primers/primers-foundations/linked-list/OrderedNodeInsert5.png)
    - Node D will be after Node B, so we must point the 'next' variable on Node B to point to Node D.
-     ![OrderedNodeInsert6](../images/OrderedNodeInsert6.png)
+     ![OrderedNodeInsert6](https://revature-curriculum.s3.amazonaws.com/primers/primers-foundations/linked-list/OrderedNodeInsert6.png)
      In theory, this insertion operation can seem relatively straightforward, but as we'll see in our later code examples, there are several things to consider in implementing this process.
