@@ -71,12 +71,12 @@ Below we list the steps in ording our Linked Lists from smallest to largest:
 
 2. Begin our traversal by comparing our new node to the current 'head' node:
    ![OrderedNodInsert2](https://revature-curriculum.s3.amazonaws.com/primers/primers-foundations/linked-list/OrderedNodeInsert2.png)
-   - If our new node is **smaller** than the **head node**, our new node should become **first in the list** so we simply repeat [Inserting to the Front of an Unordered Linked List](#inserting-to-the-front-of-an-unordered-linked-list).
+   - If our new node is **smaller** than the **head node**, our new node should become **first in the list** so we simply repeat Inserting to the Front of an Unordered Linked List.
    - If our new node is **larger** than the **head node**, we need to continue our traversal by grabbing the next node and repeating the comparison until we either find a condition where our new node is **smaller**, or we reach **the end of the list**.
 
 ![OrderedNodeInsert3](https://revature-curriculum.s3.amazonaws.com/primers/primers-foundations/linked-list/OrderedNodeInsert3.png)
 
-- If we reach the end of the list (where `next` is `null`), then follow steps from: [Inserting to the End of an Unordered Linked List](#inserting-to-the-end-of-an-unordered-linked-list).
+- If we reach the end of the list (where `next` is `null`), then follow steps from: Inserting to the End of an Unordered Linked List.
 - If our new node does not belong at either end of the list, continure on to next step.
 
 3. In order to insert in the **middle** of the list, a few things must occur to keep everything linked. Lets assume we are inserting a new node, Node D, between Node B, and Node C:
