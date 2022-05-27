@@ -6,10 +6,10 @@ In order to physically **retrieve** the data, we must **iterate** through the li
 
 Here is a visual repesentation of how retrival of a node is done:
 
-![insertion-3](../images/insertion-3.png)
+![insertion-3](https://revature-curriculum.s3.amazonaws.com/primers/primers-foundations/linked-list/insertion-3.png)
 Assume that we have the same four node list from earlier as seen above
 
-![indices](../images/indices.png)
+![indices](https://revature-curriculum.s3.amazonaws.com/primers/primers-foundations/linked-list/indices.png)
 Since our primary retrieval will be **index** based, we should now consider the indices for the list, *remembering to start from 0*.
 
 As we can see from the diagram above, we are able to retrive 4 different nodes with indecies 1 - 3. If the `get` method was called with a provided parameter of 2 (`get(2)`), the retrieval would be as follows:
