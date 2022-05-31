@@ -64,7 +64,7 @@ bubbleSort(array){
                 // swapped the first element with next element
                 array[i] = array[i+1];
                 array[i+1] = temp;
-
+```
 
 
 
