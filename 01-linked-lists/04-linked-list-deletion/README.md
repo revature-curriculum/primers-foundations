@@ -1,6 +1,6 @@
 # Deletion
 
-Deletion operations for a linked list will combine many of the ideas from the [insertion](../02-linked-list-insertion/README.md) and [retrieval](../03-linked-list-retrieval/README.md) sections. For instance, just like with retrieval, we will need to iterate to find the desired element by either it's index or it's actual data value. Once we locate the desired node we essentially will complete the same steps as insertion, just in reverse. We will adjusted if you are deleting from the front, middle, or end of the list.
+Deletion operations for a linked list will combine many of the ideas from the **insertion** and **retrieval** sections. For instance, just like with retrieval, we will need to iterate to find the desired element by either it's index or it's actual data value. Once we locate the desired node we essentially will complete the same steps as insertion, just in reverse. We will adjusted if you are deleting from the front, middle, or end of the list.
 
 ## Deletion of Tail Node
 
