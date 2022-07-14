@@ -20,3 +20,11 @@ or
 - Hierarchical Perspective
 - BFS / DSF
 - Dijkstra's Algorithm
+
+
+Technical Foundation:
+- Tracker created
+	- Beginer course, Advance course
+		- middle course?
+- Tracking of Associates switching from manual to automated tracking.
+- Discussing lab
