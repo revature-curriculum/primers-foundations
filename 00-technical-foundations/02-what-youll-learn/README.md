@@ -20,6 +20,7 @@ or
 - Hierarchical Perspective
 - BFS / DSF
 - Dijkstra's Algorithm
+- [A-Star Algorithm](https://en.wikipedia.org/wiki/A*_search_algorithm)
 
 
 Technical Foundation:
@@ -28,3 +29,6 @@ Technical Foundation:
 		- middle course?
 - Tracking of Associates switching from manual to automated tracking.
 - Discussing lab
+
+---
+
