@@ -1,7 +1,5 @@
 # Linked Lists
 
-## Introduction
-
 A **_Linked List_** is a linear data structure in which elements are not stored *sequentially* in memory like arrays. Individual elements contain the memory address of the next element in the list, wherever that may actually be in memory.
 <img src="https://revature-curriculum.s3.amazonaws.com/primers/primers-foundations/linked-list.png"/>
 > This notion of holding the memory address of the next element is called a **_pointer_** and is very common. 
@@ -45,8 +43,10 @@ In many implementation of the Linked List class, you would store two important n
 There are many different operations that are important to working with any data structure that are not exclusive to Linked Lists. A few of these operations that we will discuss are as follows:
 
 - **Insertion** : Adding a new element to the list.
-- **Retrieval** : Searching for a specific element within the list.
-- **Deletion** : Removing a specific element within the list.
+- **Retrieval** : Searching for and returning a specific element within the list.
+- **Deletion** : Searching for and removing a specific element within the list.
+
+In the next section you will try to recreate and implement these three methods in an IDE.
 
 ## References
 - [Singly LinkedList](https://www.geeksforgeeks.org/data-structures/linked-list/#singlyLinkedList)
