@@ -48,7 +48,7 @@ There are many different operations that are important to working with any data 
 
 In the next section you will try to recreate and implement these three methods in an IDE.
 
-## References
+## Additional Resources:
 - [Singly LinkedList](https://www.geeksforgeeks.org/data-structures/linked-list/#singlyLinkedList)
 - [LinkedList vs Array](https://www.geeksforgeeks.org/linked-list-vs-array/)
 - [LinkedList Intro](https://www.geeksforgeeks.org/linked-list-set-1-introduction/)

@@ -119,7 +119,7 @@ public static int binarySearch(int arr[], int x, int first, int last){
         return -1; //-1 means the element was not found
 }
 ```
-#### Here are some sources for further reading:
+## Additional Resources:
 - [Geeks for Geeks](https://www.geeksforgeeks.org/binary-search/)
 - [Recursion: A Quick Guide for Software Engineers](https://www.educative.io/blog/recursion)
 - [Java Recursion - How to make Recursive Methods](https://www.youtube.com/watch?v=sE0sH8vSmE4)
