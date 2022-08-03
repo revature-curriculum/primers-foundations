@@ -38,7 +38,7 @@ Here we conduct all of our logic within one method, `binarySearch()`. Our method
 
 Here is a diagram to illustrate what is happening:  
 
-![Binary Search](Images/BinarySearch.png)
+![Binary Search](https://revature-curriculum.s3.amazonaws.com/primers/primers-foundations/binary-search/BinarySearch.png)
 
 **Binary Search** does not search through every element of the list. It will section off areas where the element could be and searches there. Hence the reason why this search only works with an ordered list.
 
