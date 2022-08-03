@@ -1,5 +1,5 @@
 # Bubble sort
-Was writting it as easy as it sounded? Well, now we go mor in depth into this simple sorting algorithms.
+Was writting it as easy as it sounded? Well, now we go more in depth into this simple sorting algorithms.
 
 Bubble Sort takes an element and compares it to the _next_ element in the list. If the element is _greater_ in value, they **swap places**, if **not** we **move on to the next pair** of elements. This sorting method will take the elements with the **largest values and move them 'up' to the end of our list**. Just as air bubbles in water would float up to the surface of the water; hence the name. Thus, to further understand the inner workings of this sorting algorithm let's dive deeper into the first iteration through our list: 
 
