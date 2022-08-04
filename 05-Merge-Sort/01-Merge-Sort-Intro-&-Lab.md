@@ -59,7 +59,6 @@ merge(arr[], leftSub[], rightSub[], mid, arr.length-mid){
 		copy those elements into remaining slots of arr[]
 	}
 }
-
 ```
 Now to try it yourself... Good Luck!
 ==\< Lab Link Goes Here\>==
