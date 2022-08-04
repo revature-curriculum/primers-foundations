@@ -1,5 +1,5 @@
 ## Merge Sort Intro
-![Merge Sort](./Images/Merge_Sort.png)
+![Merge Sort](https://revature-curriculum.s3.amazonaws.com/primers/primers-foundations/merge-sort/Merge_Sort.png)
 
  Alright, don't get scared by this one, but this is one of the most visually confusing sorting algorithms out there. 
  
