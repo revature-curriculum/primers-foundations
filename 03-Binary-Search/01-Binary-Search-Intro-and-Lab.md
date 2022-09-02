@@ -28,4 +28,9 @@ The next module will contain a more indepth explaination of Binary Search.
 
 But First, try to implement this on your own, using what you know so far. Use whatever method you choose to implemtent; Iterative or Recursive.
 
-==\< Lab Link goes here \>==
+**To access the labs via Replit.com, you must first [join the Post-Training Replit Team by clicking here](https://replit.com/teams/join/ovnxpukpgnmqolcfnlrlxvygvzunwhgo-staging-foundations-h2-22) and signing up for a free Replit.com account with your ==Revature.net== Email. If you do not use your Revature email, your progress may not be tracked by our systems**
+
+[Replit](https://replit.com/team/staging-foundations-h2-22/binary-search-lab)  
+[Source](https://github.com/revature-curriculum/binary-search-lab.git)
+
+Once finished with the lab here, continue to the following section to read a more in-depth description of this Algorithm.
