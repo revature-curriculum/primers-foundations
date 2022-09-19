@@ -1,7 +1,7 @@
 # Recursion
 ## What is recursion?
 Recursion is the act of calling the same method internally multiple times to return an intended value.
-![Untitled-2022-08-28-1522-1.png](Untitled-2022-08-28-1522-1.png)
+![Untitled-2022-08-28-1522-1.png](Images/Untitled-2022-08-28-1522-1.png)
 Recursion can be deduced to the recursive property itself and a base case.  The **Base Case** is the condition in which the logic should end and close the loop. In the example below we will be looking at a problem in which recursion can be applied, how to implement a recursive process and the performance versus an iterative one (think conventional for loop).
 
 ## The problem
@@ -32,7 +32,7 @@ reverseStringRecursive("HELLO")
 ```
 The logic would follow - "" + "O" + "L" + "L" + "E" + "H". The diagram I included makes it easy to understand how the characters get inserted into the string but you must understand that the "H" would be inserted after all the method calls get popped off the stack thus returning the reversed string. 
 
-![Untitled-2022-08-28-1522.png](Untitled-2022-08-28-1522.png)
+![Untitled-2022-08-28-1522.png](Images/Untitled-2022-08-28-1522.png)
 
 ## Performance
 Now since you understand the basics of recursion we will be building upon this example to understand performance. Recursion isn't constrained to a specific language, it can be implemented in most languages since it's more of a way of thinking than anything else. Results may vary depending on the compilers used however in most circumstances iteration outperforms recursion. This is because each time a recursive method is called it's building up the stack frame and when it is ending, the opposite has to happen, the teardown of the stack frame. This is time the CPU can be used to do other calculations. Other culprits can be pointed out that in an iterative process, the variables are most likely held in registers, and even if they exceed this, the variables can be stored in the primary cache. However, in a recursive process, all intermediary states of the variable are stored on the stack causing more memory accesses i.e. again CPU is fetching data when it could be performing other tasks. A few compilers allow for a "tail recursion" flag that optimizes the compiler's assumptions however this does not default and at best results in it being as quick as an iterative process.
