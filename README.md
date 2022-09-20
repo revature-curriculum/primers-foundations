@@ -1,13 +1,22 @@
 # Technical Foundation Courses
 > Revature's RevPro Project asynchronous course on common Data Structures and Algorithms used in Software Development
 ### Team:
-- Julie Seals (Project Supervisor/Lead, Content Reviewer)
-- David Carrillo (Project Manger, Lesson CC, RevPro Admin, Content Reviewer)
-- Avi Flombaum (Replit Lab CC, RevPro Admin, Content Reviewer)
-- ~~Brandon Pinkerton  (Trainer, Lesson CC, Replit Lab CC, Content Reviewer)~~ <span style="color:red">out of bandwidth</span>
-- Ravikumar Bhimisetty (Content Creation Team POC)
-- Patrick Macaraeg (Lab CC)
-- Luka Pena (Lesson CC)
+> CC : Content Creation
+
+| Team Member | Role / Responsibility | Notes |
+|-----------------|------------------------|-------|
+|Julie Seals|Project Supervisor/Lead, Content Reviewer| |
+|David Carrillo|Project Manger, Lesson CC, RevPro Admin, Content Reviewer| |
+|Avi Flombaum|Replit Lab CC, RevPro Admin, Content Reviewer| |
+|Brandon Pinkerton|Trainer, Lesson CC, Replit Lab CC, Content Reviewer|<span style="color:red">limited bandwidth</span>|
+|Ravikumar Bhimisetty|Content Creation Team POC| |
+|~~Patrick Macaraeg~~|Lab CC|<span style= color:red>Re-prioritized</span>|
+|Ashik Ali|Power Bi Report| |
+|~~Luka Pena~~|Lesson CC|<span style= color:red>returned to school</span>|
+|Vy Le|Lesson CC (Time Efficiency/Big O Notation)|Associate (Bench)|
+|Esteban Moctezuma|Lesson CC (Recursion)|Associate (Bench)|
+|Rayna Hinchsliff|Lesson CC (BFS/DFS)|Associate (Bench)|
+
 
 ## Project Goal:
 Teach associates foundational topics, based on skills assesment, in software development to improve technical and comprahensive skills that will increase the chances of placement for Revature's clients' projects. 
