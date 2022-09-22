@@ -118,6 +118,6 @@ Results will vary depending on computer specs however you can expect performance
 Recursion should be implemented in specific circumstances and you should not force recursion, let it come out naturally, think of a file system, folders within folders is a good real-world example. You should remember that when using recursion, you are constantly building on the stack and if it gets too big will result in a stack overflow scenario. Using recursion also yields very high memory allocation so when memory (RAM) is a priority, this method should not be used.
 
 ## References
-https://web.mit.edu/6.005/www/fa15/classes/10-recursion/
-https://en.wikipedia.org/wiki/Tail_call
-https://www.geeksforgeeks.org/recursion-in-java/
+- https://web.mit.edu/6.005/www/fa15/classes/10-recursion/
+- https://en.wikipedia.org/wiki/Tail_call
+- https://www.geeksforgeeks.org/recursion-in-java/
