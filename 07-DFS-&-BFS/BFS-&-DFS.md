@@ -1,14 +1,18 @@
 # Breadth First Search (BFS)
 
-The Breadth First Search (BFS) traversal is an algorithm, which is used to visit all of the nodes of a given graph. In this traversal algorithm, one node is selected and then all of the adjacent nodes are visited one by one. After completing all of the adjacent vertices, it moves further to check other vertices and checks its adjacent vertices again.
+The **Breadth First Search traversal** (BFS) is an algorithm, which is used to visit *all* adjacent nodes of a given graph before reaching the end. In this traversal algorithm, one node is selected and then all of the **adjacent** nodes are visited one by one. After completing all of the **adjacent** vertices, it then moves down to check other vertices and their adjacent vertices.
 
 ## Visual Walkthrough
+
 ![BFS Diagram](Images/BFSdiagram.png)
- 1. We start at the top node
- 2. Since there is only one node at the top of this graph, we go down to the next level
- 3. Since there is a node next to this one, BFS will go to that one next
- 4. Now that there are no more nodes in this level, BFS will move to the next layer
- 5. Lastly, we will go to the last node in this row which also happens to be the last note in our graph
+
+ 1. We start from **top** node, `1`.
+ 2. Since there is only one node at the top of this graph, we go down to the *next* level
+ 3. The second level down now had two nodes side by side. These are the *adjacent vertices*. Here we traverse through node `2` and then `3`.
+ 4. Now that there are no more nodes in this level, BFS will move down to the next layer, were traverse again left to right.
+
+Below is the code example to refer to.
+
 ## Algorithm
 ```java
 class Graph {
@@ -88,19 +92,24 @@ Following is Breadth First Traversal (starting from vertex 2)
 # Depth First Search (DFS)
 
 
-The Depth First Search (DFS) is a graph traversal algorithm. In this algorithm, one starting vertex is given, and when an adjacent vertex is found, it moves to that adjacent vertex first and tries to traverse in the same manner.
+The **Depth First Search traversal** (DFS) is an algorithm used to visit the *last* nodes a quickly as possible. In this algorithm, the starting vertex is given, then the traversal moves to an adjacent vertex. I will continue down in the *same* direction until it has reached the **last** vertex on that side of the graph. Then the traversal will begin *BFS* but in **reverse**! Once it reaches the top of the graph, it will then dive back down as much as it can from the other half of the graph.
 
 ## Visual Walkthrough
 ![DFS Diagram](Images/DFSdiagram.png)
- 1. We start at the top node
- 2. We would then go to the next deepest node on the left, in our case node 2
- 3. Since there is an even deeper node on the left, we will go to that one before going through any nodes on the right
- 4. Now that we have hit the deepest node, we will go back to the top and continue going through the nodes on the right side
- 5. Lastly, we will go to the last node in this column which also happens to be the last note in our graph
+ 1. Start with the top node, `1`.
+ 2. Then go to the *next* _**deepest**_ node on the left.
+ 3. Continue traversal in the same direction until you reach the end of the left *road*.
+ 4. Now that we have hit the *deepest left* node, we will go back to the top and repeat the traversal through the nodes on the *right side* of the graph.
+
 ## Types of DFS
+There are multiple way in which one can conduct DFS. Here are all the types of DFS:
+
 -   Inorder Traversal (Left-Root-Right)
 -   Preorder Traversal (Root-Left-Right)
 -   Postorder Traversal (Left-Right-Root)
+
+The example above follows an **Inorder Traversal**. Below is how we would code for an **Inorder DFS**.
+
 ## Algorithm
 ```java
 class Graph {
@@ -172,7 +181,10 @@ class Graph {
 Output:
 Following is Depth First Traversal (starting from vertex 2) 2 0 1 3
 ```
-## Differences between BFS and DFS
+# Differences between BFS and DFS
+Both BFS and DFS traverse through our graph and searches every node. It can be a little difficult to remember the differences. Thus, here is a chart for your convience:
+
+## BFS vs. DFS
 |BFS|DFS|
 |--|--|
 |Breadth First Search|Depth First Search|
@@ -182,13 +194,14 @@ Following is Depth First Traversal (starting from vertex 2) 2 0 1 3
 |Slower|Faster|
 
 ## Real world examples
-It's always difficult for me to imagine when I would use these in the job field, so to end things off I'd like to give some uses for each and how we can see them used in our daily lives.
+It's always difficult for one to imagine when they would use these in the job field, so here are some uses for each and how we can see them used in our daily lives.
+
 ### BFS
 - **Peer to Peer Networks.**  In Peer to Peer Networks like BitTorrent, Breadth First Search is used to find all neighbor nodes.
 - **Social Networking Websites:** In social networks, we can find people within a given distance ‘k’ from a person using Breadth First Search till ‘k’ levels.
 - **GPS Navigation systems:**  Breadth First Search is used to find all neighboring locations.
 - **Broadcasting in Network:**  In networks, a broadcasted packet follows Breadth First Search to reach all nodes.
--  **In Garbage Collection:**  Breadth First Search is used in copying garbage collection using Cheney’s algorithm. Breadth First Search is preferred over Depth First Search because of the better locality of reference
+-  **In Garbage Collection:**  Breadth First Search is used in copying garbage collection using *Cheney’s algorithm*. Breadth First Search is preferred over Depth First Search because of the better locality of reference.
 ### DFS
  - **Detecting cycle in a graph** A graph has a cycle if and only if we see a back edge during DFS. So we can run DFS for the graph and check for back edges.
 - **Path Finding**   We can specialize the DFS algorithm to find a path between two given vertices u and z.
@@ -201,9 +214,7 @@ It's always difficult for me to imagine when I would use these in the job field,
 
 ## Sources
 
- - https://www.geeksforgeeks.org
- - https://www.tutorialspoint.com
- - https://www.softwaretestinghelp.com
- - https://www.geeksforgeeks.org
- - https://www.tutorialspoint.com
- - https://www.softwaretestinghelp.com
+ - [BFS | GeeksForGeeks](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/?ref=gcse)
+ - [DFS | GeeksForGeeks](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/?ref=gcse)
+ - [Java Graph Tutorial | Software Testing Help](https://www.softwaretestinghelp.com/java-graph-tutorial/)
+ - [Graph Traversals - BFS & DFS | YouTube](https://www.youtube.com/watch?v=pcKY4hjDrxk)

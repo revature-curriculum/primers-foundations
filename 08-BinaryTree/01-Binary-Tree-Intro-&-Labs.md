@@ -15,7 +15,7 @@ The Full Binary Tree is a Binary Tree where each node has either 2 child nodes o
 ![Full Tree](Images/TreeDiagrams.png)
 A Complete Binary tree is similar to a full Binary Tree, but every level of the tree must be filled, and every node must lean left.
 ![Complete Tree](Images/FullTree.png)
-A complete Binary Tree is when all the levels are filled, and all nodes are as left as possible. The last node may not have a right node. (Complete Trees are not necessarily full Trees)
+A complete Binary Tree is when all the levels are filled, and all nodes are as left as possible. The last node may not have a right node. (*Complete Trees are not necessarily full Trees*)
 ![Complete-Full Tree](Images/CompleteFullTree.png)
 A Perfect Tree is a Binary Tree with all internal nodes have 2 child nodes, and all leaf nodes are at the same level.
 
@@ -30,21 +30,47 @@ A Pathological Tree is a tree where every Node only has 1 Child node.
 A Skewed Pathological Tree is when every node has only 1 child node always either on the left or right.
 ![Skewed Tree](Images/SkewedPathologicalTree.png)
 
+## Orginization of a Tree
+
+The organization of a Binary Tree does not follow most of the examples above. Usually, they follow this:
+
+![Binary Tree Ex](Images/BalanceTree.png)
+
+Here the Tree's nodes all fall under the logic that **smaller values** fall to the **left**, and **larger values** to the **right**.
+
+As seen in this example above, our root node is the first node `5`, and stands in the **middle** in relation to the other values. While all the values to the right of it are larger, and to the left is lesser.
+
 ## Traversal
 
 Trees can be traversed in a variety of ways, unlike in linear data structures like Arrays, or Linked Lists. 
 
 Methods of traversal include:
-In-Order Traversal. In this method, the left subtree is visited first then the original root node, then the right subtree
-![In-Order Teraversal]()
-In this example, we would start with the left sub tree (2,4,5), move to the root (1), then traverse the right subtree (3,6,7)
-Therefore, the output of in-order traversal will be 2,4,5,1,3,6,7.
+**In-Order Traversal:** In this traversal, the order in which nodes are *listed* are from least to greatest. Thus, we traverse to the deepest left node first and then slowly move back up and then down into the right half of the tree. 
+![In-Order Teraversal](./Images/InOrderTraversal.png)
 
-Pre-Order traversal. In Pre-Order traversal we start at the root and then move to the left subtree, then the right subtree.
-![Pre-Order Traversal]()
-In this example we would start at 1, then move to the left subtree 2, and then the right subtree.
-The output in this traversal would be 1,2,4,5,3,6,7.
+**Pre-Order traversal:** In this traversal, we start at the root and then move to the left subtree, then the right subtree.
+![Pre-Order Traversal](./Images/PreOrderTraversal.png)
 
-Post Order traversal starts from the Left subtree, and then moves to the right subtree, then move to the root.
-This output would be 4,5,2,6,7,3,1
 
+**Post Order traversal:** This traversal traverses through the subtrees in reverse first. First the left then the right, and then finlly reaches the root node.
+![Post Order Traversal](./Images/PostOrderTraversal.png)
+
+## Binary Tree Methods
+
+- **Insert** method that creates a new node to be inserted into the binary tree with standard orginization as described above.
+- **Retrival** method searches for, and returns a specific node in a binary tree.
+- **Deletion** method is deleting a node from the binary tree, and is one of the hardest to implement. You will not have to attempt to perform this method for any of the labs of this module. However, understanding the overall workings of it is required.
+
+# Labs
+**To access the labs via Replit.com, you must first [join the Post-Training Replit Team by clicking here](https://replit.com/teams/join/ovnxpukpgnmqolcfnlrlxvygvzunwhgo-staging-foundations-h2-22) and signing up for a free Replit.com account with your ==Revature.net== Email. If you do not use your Revature email, your progress may not be tracked by our systems**
+
+## Insertion
+[REPLIT]()
+[Source]()
+
+
+## Retrevial
+[REPLIT]()
+[Source]()
+
+Once finished with the lab here, continue to the following section to read a more in-depth description of this Algorithm.
