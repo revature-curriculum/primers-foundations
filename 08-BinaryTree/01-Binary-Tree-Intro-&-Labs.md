@@ -66,11 +66,13 @@ Methods of traversal include:
 
 ## Insertion
 [REPLIT](https://replit.com/team/staging-foundations-h2-22/Binary-Tree-Insertion)
+
 [Source](https://github.com/revature-curriculum/binary-search-tree-add-node-lab.git)
 
 
 ## Retrevial
 [REPLIT](https://replit.com/team/staging-foundations-h2-22/Binary-Tree-Retrieval)
+
 [Source](https://github.com/revature-curriculum/BinaryTreeRetrievalLab.git)
 
 Once finished with the lab here, continue to the following section to read a more in-depth description of this Algorithm.
