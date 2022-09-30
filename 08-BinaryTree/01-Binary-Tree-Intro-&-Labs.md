@@ -57,16 +57,16 @@ Methods of traversal include:
 
 ## Binary Tree Methods
 
-- **Insert** method that creates a new node to be inserted into the binary tree with standard orginization as described above.
-- **Retrival** method searches for, and returns a specific node in a binary tree.
+- **Insert** method that creates a new node to be inserted into a given binary tree, with standard orginization as described above, and a given numeric value to be assigned to the new node.
+- **Retrival** method searches for, and returns a specific node in a binary tree base off a given numeric value.
 - **Deletion** method is deleting a node from the binary tree, and is one of the hardest to implement. You will not have to attempt to perform this method for any of the labs of this module. However, understanding the overall workings of it is required.
 
 # Labs
 **To access the labs via Replit.com, you must first [join the Post-Training Replit Team by clicking here](https://replit.com/teams/join/ovnxpukpgnmqolcfnlrlxvygvzunwhgo-staging-foundations-h2-22) and signing up for a free Replit.com account with your ==Revature.net== Email. If you do not use your Revature email, your progress may not be tracked by our systems**
 
 ## Insertion
-[REPLIT]()
-[Source]()
+[REPLIT](https://replit.com/team/staging-foundations-h2-22/Binary-Tree-Insertion)
+[Source](https://github.com/revature-curriculum/binary-search-tree-add-node-lab.git)
 
 
 ## Retrevial
