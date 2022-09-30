@@ -70,7 +70,7 @@ Methods of traversal include:
 
 
 ## Retrevial
-[REPLIT]()
-[Source]()
+[REPLIT](https://replit.com/team/staging-foundations-h2-22/Binary-Tree-Retrieval)
+[Source](https://github.com/revature-curriculum/BinaryTreeRetrievalLab.git)
 
 Once finished with the lab here, continue to the following section to read a more in-depth description of this Algorithm.
