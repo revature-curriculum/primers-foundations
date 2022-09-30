@@ -58,11 +58,3 @@ public class Main {
 }
 ```
 And just like that, you know how to make a graph in Java!
-
-
-
-## Sources
-
- - https://www.geeksforgeeks.org
- - https://www.tutorialspoint.com
- - https://www.softwaretestinghelp.com
