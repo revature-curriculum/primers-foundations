@@ -17,6 +17,7 @@ Now you try:
 **To access the labs via Replit.com, you must first [join the Post-Training Replit Team by clicking here](https://replit.com/teams/join/ovnxpukpgnmqolcfnlrlxvygvzunwhgo-staging-foundations-h2-22) and signing up for a free Replit.com account with your ==Revature.net== Email. If you do not use your Revature email, your progress may not be tracked by our systems**
 
 [REPLIT](https://replit.com/team/staging-foundations-h2-22/Recursion)
+
 [Source](https://github.com/revature-curriculum/Recursion-Lab/blob/main/RecurseiveMethod.java)
 
 Once finished with the lab here, continue to the following section to read a more in-depth description of this Algorithm.
