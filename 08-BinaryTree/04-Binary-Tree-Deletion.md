@@ -1,12 +1,12 @@
 # Deletion from a Binary Tree
 
-In theory, deletion from any data structure can seem as simple as `find the element with the data matching what you want to `delete` and then `delete it`. However, when it comes to hierarchical data structures, we have to carefully consider how to reposition the other members of the hierarchy. For instance, if we have the following tree:
+In theory, deletion from any data structure can seem as simple as find the element with the data matching what you want to `delete` and then `delete` it. However, when it comes to hierarchical data structures, we have to carefully consider how to reposition the other members of the hierarchy. For instance, if we have the following tree:
 
 <img src="./Images/completedTree.png">
 
 When deleting the number 2 node, what should happen with its child, 3, and 3's child, 4? To avoid unintentional data loss, we must replace any deleted nodes with the correct node to maintain the tree structure. In the example above, this seems a very simple replacement. 
 
-However, when the hierarchy becomes more complexly nested, many issues begin to arise. For instance, what if we wanted to delete the root node, 5? Well, now we have to choose a *successor*, choosing a direct child of the deleted node. If we choose 1 to be the successor, its children would all need to change to maintain the Binary Tree principles. This can be quite taxing, so instead we typically choose an **in-order successor or predecessor**, meaning if the number to be deleted was 5, from the tree above, we would find the next closest node in size to 5. In our case, 6 happens to be a direct child, but this is not always the case. With 6 as our successor, the replacement remains relatively simple, but again, in more complex structures, this can start to get quite confusing.
+However, when the hierarchy becomes more complexly nested, many issues begin to arise. For instance, what if we wanted to delete the root node, 5? Well, now we have to choose a *successor*, choosing a direct child of the deleted node. If we choose 1 to be the successor, its children would all need to change to maintain the Binary Tree principles. This can be quite taxing, so instead, we typically choose an **in-order successor or predecessor**, meaning if the number to be deleted was 5, from the tree above, we would find the next closest node in size to 5. In our case, 6 happens to be a direct child, but this is not always the case. With 6 as our successor, the replacement remains relatively simple, but again, in more complex structures, this can start to get quite confusing.
 
 As I'm sure you're beginning to realize, implementing deletion in a Binary Tree can be quite the task, but in any case, **recursion** is often the key to a clean solution. 
 
