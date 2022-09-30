@@ -12,25 +12,36 @@ This data structure is hierarchical, meaning that data is linked in a Parent/Chi
 There are various common types of Binary Trees.
 
 The Full Binary Tree is a Binary Tree where each node has either 2 child nodes or no child nodes
+
 ![Full Tree](Images/TreeDiagrams.png)
+
 A Complete Binary tree is similar to a full Binary Tree, but every level of the tree must be filled, and every node must lean left.
+
 ![Complete Tree](Images/FullTree.png)
-A complete Binary Tree is when all the levels are filled, and all nodes are as left as possible. The last node may not have a right node. (*Complete Trees are not necessarily full Trees*)
+
+A complete Binary Tree is when all the levels are filled, and all nodes are as left as possible. The last node may not have the right node. (*Complete Trees are not necessarily full Trees*)
+
 ![Complete-Full Tree](Images/CompleteFullTree.png)
-A Perfect Tree is a Binary Tree with all internal nodes have 2 child nodes, and all leaf nodes are at the same level.
+
+A Perfect Tree is a Binary Tree with all internal nodes having 2 child nodes, and all leaf nodes are at the same level.
 
 A Balanced Tree is a tree in which the height of a left and right subtree cannot differ more than one node.
 
 Unbalanced trees are simply the opposite; They are trees in which the left and right subtrees differ by more than one node
 
 This example of a Full Tree is also a balanced tree.
+
 ![Full-Balanced Tree](Images/TreeDiagrams.png)
+
 A Pathological Tree is a tree where every Node only has 1 Child node.
+
 ![Pathological Tree](Images/PathologicalTree.png)
+
 A Skewed Pathological Tree is when every node has only 1 child node always either on the left or right.
+
 ![Skewed Tree](Images/SkewedPathologicalTree.png)
 
-## Orginization of a Tree
+## Organization of a Tree
 
 The organization of a Binary Tree does not follow most of the examples above. Usually, they follow this:
 
@@ -42,24 +53,26 @@ As seen in this example above, our root node is the first node `5`, and stands i
 
 ## Traversal
 
-Trees can be traversed in a variety of ways, unlike in linear data structures like Arrays, or Linked Lists. 
+Trees can be traversed in a variety of ways, unlike in linear data structures like Arrays, or Linked Lists. 
 
 Methods of traversal include:
-**In-Order Traversal:** In this traversal, the order in which nodes are *listed* are from least to greatest. Thus, we traverse to the deepest left node first and then slowly move back up and then down into the right half of the tree. 
+**In-Order Traversal:** In this traversal, the order in which nodes are *listed* is from least to greatest. Thus, we traverse to the deepest left node first and then slowly move back up and then down into the right half of the tree. 
+
 ![In-Order Teraversal](./Images/InOrderTraversal.png)
 
 **Pre-Order traversal:** In this traversal, we start at the root and then move to the left subtree, then the right subtree.
 ![Pre-Order Traversal](./Images/PreOrderTraversal.png)
 
 
-**Post Order traversal:** This traversal traverses through the subtrees in reverse first. First the left then the right, and then finlly reaches the root node.
+**Post Order traversal:** This traversal traverses through the subtrees in reverse first. First, the left then the right, and then finally reaches the root node.
+
 ![Post Order Traversal](./Images/PostOrderTraversal.png)
 
 ## Binary Tree Methods
 
-- **Insert** method that creates a new node to be inserted into a given binary tree, with standard orginization as described above, and a given numeric value to be assigned to the new node.
-- **Retrival** method searches for, and returns a specific node in a binary tree base off a given numeric value.
-- **Deletion** method is deleting a node from the binary tree, and is one of the hardest to implement. You will not have to attempt to perform this method for any of the labs of this module. However, understanding the overall workings of it is required.
+- **Insert** method that creates a new node to be inserted into a given binary tree, with the standard organization as described above, and a given numeric value to be assigned to the new node.
+- **Retrieval** method searches for and returns a specific node in a binary tree base on a given numeric value.
+- **Deletion** method of deleting a node from the binary tree is one of the hardest to implement. You will not have to attempt to perform this method for any of the labs of this module. However, understanding the overall workings of it is required.
 
 # Labs
 **To access the labs via Replit.com, you must first [join the Post-Training Replit Team by clicking here](https://replit.com/teams/join/ovnxpukpgnmqolcfnlrlxvygvzunwhgo-staging-foundations-h2-22) and signing up for a free Replit.com account with your ==Revature.net== Email. If you do not use your Revature email, your progress may not be tracked by our systems**
@@ -70,7 +83,7 @@ Methods of traversal include:
 [Source](https://github.com/revature-curriculum/binary-search-tree-add-node-lab.git)
 
 
-## Retrevial
+## Retrieval
 [REPLIT](https://replit.com/team/staging-foundations-h2-22/Binary-Tree-Retrieval)
 
 [Source](https://github.com/revature-curriculum/BinaryTreeRetrievalLab.git)
