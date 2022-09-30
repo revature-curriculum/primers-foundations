@@ -1,6 +1,6 @@
 # Deletion from a Binary Tree
 
-In theory, deletion from any data structure can seem as simple as find the element with the data matching what you want to `delete` and then `delete` it. However, when it comes to hierarchical data structures, we have to carefully consider how to reposition the other members of the hierarchy. For instance, if we have the following tree:
+In theory, deletion from any data structure can seem as simple as finding the element with the data matching what you want to `delete` and then `delete` it. However, when it comes to hierarchical data structures, we have to carefully consider how to reposition the other members of the hierarchy. For instance, if we have the following tree:
 
 <img src="./Images/completedTree.png">
 
