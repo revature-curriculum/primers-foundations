@@ -1,4 +1,4 @@
-# Retreiving from a Binary Tree
+# Retrieving from a Binary Tree
 
 We need to retrieve something from our Binary Tree... Easy! No really! The way a Binary Tree is constructed, _if balanced_, is meant to make our search easier and faster! Why? Because, when searching we only have to search through half of our data structure, and the half of that the further down we go in layers.
 
